@@ -1,26 +1,26 @@
-# Gestión de archivos de audio en MongoDB
+# Audio file management with MongoDB
 
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 
-Sistema para gestionar archivos de audio en formato `.wav` utilizando **MongoDB**. Permite almacenar, actualizar y consultar metadatos asociados a los archivos de audio, tales como fecha de grabación, ubicación, duración y tipo de fuente. Los usuarios pueden también acceder a segmentos de audio etiquetados para su posterior análisis.
+This system is designed to manage .wav audio files using MongoDB. It allows you to store, update, and query metadata associated with audio files, such as recording date, location, duration, and source type. Users can also access tagged audio segments for further analysis. Created as part of a learning project to explore MongoDB database management and Python programming.
 
-## Funcionalidades
+## Features
 
-- **Gestión de base de datos MongoDB** para almacenar y organizar archivos de audio.
-- **Actualización de URLs** de archivos `.wav` en la base de datos.
-- **Consulta de grabaciones** por fecha de grabación y extracción de datos geoespaciales (latitud/longitud).
-- **Inserción de documentos** con información detallada sobre archivos de audio y segmentos.
+- **MongoDB database management** to store and organize audio files.
+- **Updating URLs** for `.wav` audio files in the database.
+- **Querying recordings** by recording date and extracting geospatial data (latitude/longitude).
+- **Inserting documents** with detailed information about audio files and segments.
 
-## Archivos
+## Project structure
 
-1. **crear-db**  
-   Crea la base de datos y la colección `archivos`, e inserta documentos con información sobre archivos de audio y sus segmentos.
+1. **create-db**  
+   Creates the database and the `files` collection, inserting documents with information about audio files and their segments.
 
-2. **agregar-audio**  
-   Actualiza las URLs de los archivos de audio en la colección `archivos` en la base de datos.
+2. **add-audio**  
+   Updates the URLs of `.wav` audio files in the `files` collection in the database.
 
-3. **visualizar-consultas**  
-   Realiza consultas para obtener grabaciones de una fecha específica y visualiza coordenadas geográficas (latitud/longitud).
+3. **view-queries**  
+   Queries the database for recordings from a specific date and displays geographical coordinates (latitude/longitude).

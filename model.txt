@@ -1,0 +1,27 @@
+colección 'Archivos'
+
+Archivos
+    _id"
+    fecha
+    ciudad
+    URL
+    latitud"
+    longitud
+    duracion
+    formato
+    exterior
+    tipo_fuente
+    usuario
+    	RUT
+        nombre
+        apellido
+    segmentos
+        ID
+        formato
+        duracion
+        inicio
+        fin
+        etiquetas 
+        	descripcion
+        	ID_analizador
+     
