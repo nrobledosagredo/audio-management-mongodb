@@ -5,7 +5,7 @@
 ![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 
-This system is designed to manage .wav audio files using MongoDB. It allows you to store, update, and query metadata associated with audio files, such as recording date, location, duration, and source type. Users can also access tagged audio segments for further analysis. Created as part of a learning project to explore MongoDB database management and Python programming.
+This system is designed to manage .wav audio files using MongoDB. It allows you to store, update, and query metadata associated with audio files, such as recording date, location, duration, and source type. Users can also access tagged audio segments for further analysis. Created as part of a learning project to explore MongoDB database management.
 
 ## Features
 
@@ -16,11 +16,11 @@ This system is designed to manage .wav audio files using MongoDB. It allows you 
 
 ## Project structure
 
-1. **create-db**  
+- **create-db**  
    Creates the database and the `files` collection, inserting documents with information about audio files and their segments.
 
-2. **add-audio**  
+- **add-audio**  
    Updates the URLs of `.wav` audio files in the `files` collection in the database.
 
-3. **view-queries**  
+- **view-queries**  
    Queries the database for recordings from a specific date and displays geographical coordinates (latitude/longitude).
