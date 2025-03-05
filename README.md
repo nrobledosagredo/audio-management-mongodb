@@ -1,26 +1,44 @@
 # Audio file management with MongoDB
 
-![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 
-This system is designed to manage .wav audio files using MongoDB. It allows you to store, update, and query metadata associated with audio files, such as recording date, location, duration, and source type. Users can also access tagged audio segments for further analysis. Created as part of a learning project to explore MongoDB database management.
+## Overview
+
+This system manages `.wav` audio files using MongoDB, enabling users to store, update, and query metadata such as recording date, location, duration, and source type. It also supports accessing tagged audio segments for analysis. Developed as a learning project to explore MongoDB database management and Python integration.
 
 ## Features
 
-- **MongoDB database management** to store and organize audio files.
-- **Updating URLs** for `.wav` audio files in the database.
-- **Querying recordings** by recording date and extracting geospatial data (latitude/longitude).
-- **Inserting documents** with detailed information about audio files and segments.
+- **Audio metadata storage:** Stores detailed information about `.wav` files, including recording date, location, and duration.  
+- **URL management:** Updates and manages URLs for audio files in the database.  
+- **Geospatial queries:** Retrieves recordings by date and extracts latitude/longitude data.  
+- **Tagged segments:** Organizes and accesses tagged segments within audio files.  
+- **Document insertion:** Adds structured documents with audio file and segment details.  
 
-## Project structure
+## Setup
 
-- **create-db**  
-   Creates the database and the `files` collection, inserting documents with information about audio files and their segments.
+1. **Clone the repository**:  
+   ```bash
+   git clone <repository-url>
+   cd <repository-folder>
+   ```
 
-- **add-audio**  
-   Updates the URLs of `.wav` audio files in the `files` collection in the database.
+2. **Set up MongoDB**: Ensure MongoDB is installed and running locally or provide a connection string for a remote instance.
 
-- **view-queries**  
-   Queries the database for recordings from a specific date and displays geographical coordinates (latitude/longitude).
+3. **Run the scripts**:  
+   - **Create database**:  
+     ```bash
+     python create-db.py
+     ```
+   - **Add audio files**:  
+     ```bash
+     python add-audio.py
+     ```
+   - **Query recordings**:  
+     ```bash
+     python view-queries.py
+     ```
+
+4. Use the scripts to manage and query audio file metadata and segments.
